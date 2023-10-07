@@ -1,11 +1,11 @@
 version: '3.8'
 services:
   docker-test:
-    build: .
-    ports:
-      - "80:3006"
-    volumes:
-      - ./src:/react/next-gen/src
-    env_file:
-      - ./.env
-    container_name: dockertestcont
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.dev
+    # env_file:
+    #   - ./.env
+    # container_name: dockertestcont
+    # image: dokcertest:tag
+    
